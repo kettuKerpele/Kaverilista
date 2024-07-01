@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<link rel="stylesheet" href="kaveritCss.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaverit2</title>
+</head>
+<body>
+
+<div class="container2">
+ <div class="runko2">
+  <button class="siirry" onclick="vaihda()">Siirry versioon 1</button><hr>
+   <form action="#" onsubmit="add(event)">
+    <p style="font-size:10px;">Lisää kavereita listalle</p>
+    <p id="numbers">Kavereita: 0</p>
+    <input id="input" type="text" placeholder="kirjoita..." required>
+    <button id="submitJtn">Lisää</button>
+    <button onclick="poista()">Poista</button>
+   </form>
+ </div>
+</div>
+
+<br>
+<br>
+
+<div class="lista">
+  <h1>Kaverilista:<hr></h1>
+  <button onclick="jarjesta()">Järjestä</button>
+  <ol id="output"></ol>
+</div>
+
+<script src="2js.js"></script>
+
+</body>
+</html>
